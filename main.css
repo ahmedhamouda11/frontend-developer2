@@ -1,0 +1,177 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+li{
+    list-style: none;
+}
+.navbar{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #000;
+    color: #fff;
+    height: 80px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 99999; 
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    text-transform:capitalize;
+}
+.navbar .logo {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.baner{
+    background-image: url(intro-bg.jpg);
+    width: 100%;
+    height: 100vh;
+}
+.baner .welcome-msg {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+}
+.baner .welcome-msg h1 {
+font-size: 30px;
+text-transform: capitalize;
+letter-spacing: 1px;
+}
+.baner .welcome-msg p {
+    padding: 60px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.baner .welcome-msg h2 {
+    margin-bottom: 20px;
+}
+.baner .welcome-msg a {
+    padding: 10px 30px;
+    border-radius: 60px;
+    color: #20c997;
+    border: 1px solid;
+
+}
+.baner .welcome-msg a:hover {
+background-color: black;
+transition: var(--transition);
+color: #FFF;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.697);
+    width: 100%;
+    height: 100vh;
+}
+
+.about {
+padding: 60px 20px;
+font-size: 20px;
+
+}
+.about .descr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0 2%;
+
+}
+.about .descr .description {
+    width: 60%;
+}
+.about .about-welcome {
+    margin: bottom 170px;
+
+}
+.about .about-welcome h1 {
+    text-align: center;
+}
+.about .about-welcome h1::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background-color: #20c997;
+    bottom: -10px;
+    left: 670px;
+}
+.about .about-welcome{
+    position: relative;
+}
+.about .about-welcome::after {
+    content: "about me";
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    font-size: 50px;
+    opacity: .5;
+}
+.about .descr .description h1 {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.about .descr .description h1 span {
+
+color: #20c997;
+}
+.about .descr .detils {
+    width: 30%;
+}
+.about .descr .detils h6 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(#20c997);
+
+}
+.about .descr .detils span {
+    font-weight:100;
+    font-size: 15px;
+    color: #20c997;
+}
+.about .btn {
+    background-color:#20c997;
+    padding: 10px 35px;
+    border-radius: 20px;
+}
+.about .btn:hover {
+background-color: #20c997;
+color: #000;
+border: 1px #000;
+}
+.about .exber {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px 0;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.about .exber span {
+    font-size: 60px;
+    color: darkgray;
+}
